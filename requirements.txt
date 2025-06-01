@@ -1,0 +1,32 @@
+# AI Scalper XAUUSDmm - Requirements for Python 3.11.6 + Exness
+# Updated for TA-Lib 0.6.x and XAUUSDm symbol
+
+# Core trading and ML libraries
+MetaTrader5>=5.0.45
+pandas>=1.5.0
+numpy>=1.21.0,<2.0.0
+xgboost>=1.7.0
+scikit-learn>=1.1.0
+
+# Technical Analysis - Latest 0.6.x version
+TA-Lib>=0.6.0
+
+# Data visualization
+matplotlib>=3.5.0
+seaborn>=0.11.0
+
+# Model persistence and utilities
+joblib>=1.1.0
+python-json-logger>=2.0.0
+python-dateutil>=2.8.0
+pytz>=2021.3
+
+# System monitoring
+psutil>=5.8.0
+
+# Web dashboard
+flask>=2.0.0
+
+# Additional utilities for Python 3.11.6 compatibility
+pathlib2>=2.3.6
+typing-extensions>=4.0.0

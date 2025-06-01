@@ -1,0 +1,56 @@
+{
+    "symbol": "XAUUSDm",
+    "timeframes": [
+        1,
+        5,
+        15,
+        60
+    ],
+    "lookback_periods": 500,
+    "signal_threshold": 0.75,
+    "anomaly_threshold": -0.1,
+    "max_daily_signals": 15,
+    "risk_per_trade": 0.015,
+    "paths": {
+        "model_path": "models/xgboost_model.pkl",
+        "scaler_path": "models/scaler.pkl",
+        "anomaly_detector_path": "models/anomaly_detector.pkl",
+        "signal_file": "signals/xauusdm_signal.txt",
+        "log_file": "logs/ai_signals.log"
+    },
+    "logging": {
+        "log_level": "INFO",
+        "max_log_size_mb": 50,
+        "backup_count": 5,
+        "detailed_logging": true
+    },
+    "mt5_settings": {
+        "login": 247501403,
+        "password": "Gold123@",
+        "server": "Exness-MT5Trial",
+        "timeout": 10000,
+        "retries": 3,
+        "symbol_suffix": "m"
+    },
+    "trading_schedule": {
+        "start_hour": 1,
+        "end_hour": 23,
+        "weekdays_only": true,
+        "pause_on_friday": true,
+        "friday_close_hour": 21,
+        "server_timezone": "EET"
+    },
+    "model_parameters": {
+        "lookforward_periods": 5,
+        "profit_threshold": 0.0002,
+        "max_features": 50,
+        "feature_selection": true
+    },
+    "risk_management": {
+        "max_drawdown_percent": 8.0,
+        "equity_stop_percent": 4.0,
+        "max_trades_per_day": 15,
+        "min_confidence": 0.75,
+        "max_spread_points": 50
+    }
+}
